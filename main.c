@@ -2,11 +2,10 @@
 
 #define N_ELEMENTS(arr) (sizeof(arr) / sizeof(*(arr)))
 
-int min_element(int* arr, int size)
+int min_element(int *arr, int size)
 {
     int min = *arr;
-
-    int* it;
+    int *it;
     for (it = arr + 1; it < arr + size; ++it) {
         if (*it < min) {
             min = *it;
@@ -16,7 +15,7 @@ int min_element(int* arr, int size)
     return min;
 }
 
-void print_array(int* arr, int size)
+void print_array(int *arr, int size)
 {
     printf("Array: ");
     int i;
